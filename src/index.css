@@ -1,0 +1,179 @@
+/* --- FONTS --- */
+@font-face {
+  font-family: Font1;
+  src: url('/kesslersuperdisplayweb-regular.ttf');
+}
+
+@font-face {
+  font-family: Font2;
+  src: url('/FraktionMono-Regular.ttf');
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body, #root { width: 100%; height: 100%; overflow: hidden; background-color: #f4f4f4; }
+
+/* --- MAIN CONTAINER --- */
+#main {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+/* --- SECTIONS (Desktop Default) --- */
+.left, .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 100%;
+  z-index: 30;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 120%;
+  position: relative;
+  z-index: 10;
+}
+
+/* --- TEXT BLOCKS --- */
+.t-center, .b-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+}
+.t-center { align-items: flex-end; }
+.b-center { align-items: flex-start; }
+
+.center h1 {
+  line-height: 17vh;
+  font-size: 11vw;
+  font-weight: 400;
+  font-family: Font1, serif;
+  text-align: center;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+/* --- HIDDEN LINES --- */
+.c-center-one, .c-center-two {
+  position: relative;
+  transform-origin: center;
+  width: 0px; 
+  background-color: transparent; 
+  height: 0vh; 
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+/* --- BUTTONS --- */
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5vw 1.2vw;
+  border: 1px solid #333;
+  border-radius: 50px;
+  font-size: 0.7vw;
+  font-family: Font2, monospace;
+  cursor: pointer;
+  background: transparent;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  overflow: hidden;
+  pointer-events: auto;
+}
+.btn h3 { display: block; position: relative; }
+.left:hover #btn-lft, .right:hover #btn-rght {
+  background-color: #111; color: #fff; border: none;
+}
+
+/* --- IMAGES --- */
+.img-all {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+  filter: blur(20px);
+  z-index: 20;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+}
+.img-one   { bottom: 60%; right: 50%; }
+.img-two   { top: 55%; left: 50%; }
+.img-three { top: 50%; left: 37%; }
+.img-four  { top: 40%; left: 55%; }
+
+
+/* =========================================
+   RESPONSIVE MEDIA QUERIES
+   ========================================= */
+
+/* --- TABLET & SMALL LAPTOPS (Max Width: 1024px) --- */
+@media (max-width: 1024px) {
+  .center h1 { font-size: 14vw; line-height: 14vh; }
+  .btn { padding: 1vw 2vw; font-size: 1.2vw; }
+}
+
+/* --- MOBILE DEVICES (Max Width: 768px) --- */
+@media (max-width: 768px) {
+  
+  /* Change Layout to Vertical Stack */
+  #main {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* Adjust Section Sizes */
+  .left, .right {
+    width: 100%;
+    height: 15vh; /* Buttons take small space at top/bottom */
+  }
+  
+  .center {
+    width: 100%;
+    height: 60vh; /* Text takes main space */
+  }
+
+  /* Text Adjustments */
+  .center h1 {
+    font-size: 20vw; /* Bigger text for mobile width */
+    line-height: 20vh;
+  }
+
+  /* Button Adjustments */
+  .btn {
+    padding: 3vw 6vw;
+    font-size: 3vw;
+    border-radius: 50px;
+  }
+
+  /* Adjust Text Alignment logic for vertical stack */
+  .t-center { align-items: flex-end; padding-bottom: 2vh; }
+  .b-center { align-items: flex-start; padding-top: 2vh; }
+
+  /* --- Mobile Image Positions --- */
+  /* Re-centering images relative to the new vertical layout */
+  .img-one   { bottom: 50%; right: 10%; width: 40vw !important; height: 30vh !important; }
+  .img-two   { top: 50%; left: 10%; width: 30vw !important; height: 25vh !important; }
+  .img-three { top: 40%; left: 5%; width: 20vw !important; height: 15vh !important; }
+  .img-four  { top: 30%; left: 60%; width: 15vw !important; height: 10vh !important; }
+}
+
+/* --- SMALL MOBILE (Max Width: 480px) --- */
+@media (max-width: 480px) {
+  .center h1 { font-size: 25vw; line-height: 18vh; }
+  .btn { font-size: 3.5vw; padding: 3vw 8vw; }
+  
+  /* Prevent images from being too huge on tiny screens */
+  .img-one { width: 60vw !important; height: 30vh !important; }
+}
