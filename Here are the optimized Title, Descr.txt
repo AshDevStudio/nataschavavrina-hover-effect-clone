@@ -1,0 +1,35 @@
+Here are the optimized Title, Description, and Hashtags for your YouTube Short to help it rank. Since you built this using React, Vite, and likely GSAP or Framer Motion (common for these Awwwards-style effects), I have included those high-ranking keywords.
+
+🎥 YouTube Short Metadata
+Video Title Options (Choose one):
+
+Viral Style: 🤯 Recreating Awwwards Hover Animation in React (Natascha Vavrina)
+
+How-To Style: Build This Crazy Image Reveal Effect with React & Vite 🚀
+
+Developer Focused: Awwwards Website Clone: Hover Animations Tutorial (React + GSAP)
+
+Video Description:
+
+Recreating the viral hover animation from the award-winning Natascha Vavrina website! 🚀 In this video, I break down how to build this smooth "Image Reveal" effect using React, Vite, and modern CSS.
+
+👨‍💻 Tech Stack: React.js, Vite, Tailwind CSS, GSAP
+
+👇 Get the Source Code:
+[INSERT YOUR GITHUB/PROJECT LINK HERE]
+
+🔔 Subscribe for more Awwwards recreations and web dev tutorials! @AshDevStudio
+
+#reactjs #webdevelopment #awwwards #frontend #uiux
+
+Hashtags (Copy & Paste):
+#reactjs #javascript #webdesign #awwwards #gsap #frontenddeveloper #coding #uiuxdesign #vite #animation #webdev #programmer #css3 #nataschavavrina #hovereffect
+
+💡 Tips to Rank Higher
+Source Code Link: In the description where I wrote [INSERT YOUR GITHUB/PROJECT LINK HERE], paste the direct link to your GitHub repository or a code snippet (like CodePen/SandBox). YouTube algorithm loves external links that provide value.
+
+Pinned Comment: Post a comment on your own video saying: "Source code is in the description! 👇 Let me know what website I should recreate next?" and Pin it. This boosts engagement.
+
+Audio: Use a trending "Phonk" or "Lo-fi Coding" sound from the YouTube audio library to increase retention.
+
+Text Overlay: In the first 3 seconds of the video, add text on screen saying "Awwwards Website vs. My React Code" to hook viewers immediately.

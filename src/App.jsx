@@ -90,7 +90,7 @@ function App() {
       </div>
 
       <div className="right" onMouseEnter={() => handleMouseEnter('right')} onMouseLeave={handleMouseLeave}>
-        <div id="btn-rght" className="btn"><h3>Ashish.Web CODING</h3></div>
+        <div id="btn-rght" className="btn"><h3>AshDevStudio</h3></div>
       </div>
 
       {/* IMAGES */}
